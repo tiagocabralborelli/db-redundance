@@ -1,4 +1,4 @@
-# db-redundance
+# An analysis of the antimicrobial resistance reference database redundancy and its impact on functional annotation
 
 
 
