@@ -2,7 +2,6 @@
 
 ## Background
 
-
 ## Documentation 
 ### Modules and fuctions
 #### Translate
@@ -16,7 +15,7 @@ ToProtein(input,output,minlength):
     Requires:
         seqkit toolkit
 ```
-#### Standardize 
+#### Process 
 ```
 InsertTag(input, output, tag):
     Insert a database-refering tag at the end of each sequence header in a FASTA file.
@@ -38,16 +37,37 @@ CreateDatabase(input, output):
     Creates a DIAMOND database from a FASTA file.
     Args:
         input (str): Path to the input FASTA file.
+
+GetSequences(fasta):
+    Reads a FASTA file and returns a list of sequences.
+    Args:        
+        fasta (str): Path to the input FASTA file.
+    Returns:       
+        list: A list of sequences.
+
+
 ```
 #### Align
 ```
 RunDiamond(query, db, output, qcov = 80, maxseq = 5, threads=4):
-Runs a DIAMOND search.
-Args:
-    query (str): Path to the query FASTA file.
-    db (str): Path to the DIAMOND database.
-    output (str): Path to the output file.
-    qcov (int, optional): Query coverage threshold. Defaults to 80.
-    maxseq (int, optional): Maximum number of target sequences to report. Defaults to 5.
-    threads (int, optional): Number of threads to use. Defaults to 4.
+    Runs a DIAMOND search.
+    Args:
+        query (str): Path to the query FASTA file.
+        db (str): Path to the DIAMOND database.
+        output (str): Path to the output file.
+        qcov (int, optional): Query coverage threshold. Defaults to 80.
+        maxseq (int, optional): Maximum number of target sequences to report. Defaults to 5.
+        threads (int, optional): Number of threads to use. Defaults to 4.
+ProteinAligner(fasta):
+    Aligns a FASTA file of protein sequences using MAFFT.
+    Args:        
+        fasta (str): Path to the input FASTA file.
+    Returns:        
+        AlignIO.MultipleSeqAlignment: The aligned sequences.
+RunCDHIT(input, output, max_identity=0.95, min_cov = 0.8):
+    Runs CD-HIT to cluster sequences in a FASTA file based on sequence identity.
+    Args:        input (str): Path to the input FASTA file.
+        output (str): Path to the output FASTA file where the clustered sequences will be saved.
+        max_identity (float, optional): The maximum sequence identity threshold for clustering. Defaults to 0.95.
+        min_cov (float, optional): The minimum coverage threshold for clustering. Defaults to 0.8."""
 ```

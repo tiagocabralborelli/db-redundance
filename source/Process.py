@@ -1,4 +1,5 @@
 import subprocess
+from Bio import SeqIO 
 
 def InsertTag(input, output, tag):
     """Insert a database-refering tag at the end of each sequence header in a FASTA file.
@@ -31,7 +32,6 @@ def InsertTag(input, output, tag):
                 Counter += 1
             else:
                 pass
-
 def ConcatenateFiles(path,output):
     """Concatenate all fasta files in a given path into a single output file.
     Args:
@@ -40,7 +40,6 @@ def ConcatenateFiles(path,output):
     """
     command = f"cat {path}/*.fasta > {output}"
     subprocess.run(command, shell=True, check=True)
-
 def CreateDatabase(input, output):
     """Creates a DIAMOND database from a FASTA file.
     Args:
@@ -49,3 +48,12 @@ def CreateDatabase(input, output):
     """
     command = f"diamond makedb --in {input} -d {output}"
     subprocess.run(command, shell=True)
+def GetSequences(fasta):
+    """Reads a FASTA file and returns a list of sequences.
+    Args:        fasta (str): Path to the input FASTA file.
+    Returns:        list: A list of sequences.
+    """
+    with open(fasta, "r") as handle:
+        sequences = [f">{record.id}\n{record.seq}" for record in SeqIO.parse(handle, "fasta")]
+    return sequences
+
