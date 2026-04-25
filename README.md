@@ -27,11 +27,12 @@ InsertTag(input, output, tag):
         Creates a new FASTA file with the tag inserted at the end of each sequence header.
         Creates a new file with the list of all sequence headers in the input FASTA file, without the tag.
 
-ConcatenateFiles(path,output):
+ConcatenateFiles(path,output,extension):
     Concatenate all fasta files in a given path into a single output file.
     Args:
         path (str): Path to the directory containing the files to concatenate.
         output (str): Path to the output file where the concatenated content will be saved.
+        extension (str): The file extension to look for (default is "fasta").
 
 CreateDatabase(input, output):
     Creates a DIAMOND database from a FASTA file.
@@ -45,7 +46,12 @@ GetSequences(fasta):
     Returns:       
         list: A list of sequences.
 
-
+ClusterCounter(path):
+    Runs CD-HIT at different identity thresholds and counts the number of clusters formed at each threshold.
+    Args:
+        path (str): Path to the input FASTA file.
+    Returns:
+        tuple: A tuple containing two lists: the first list contains the number of clusters at each threshold, and the second list contains the corresponding percentages of the total number of sequences.
 ```
 #### Align
 ```
