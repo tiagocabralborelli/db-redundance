@@ -52,6 +52,14 @@ ClusterCounter(path):
         path (str): Path to the input FASTA file.
     Returns:
         tuple: A tuple containing two lists: the first list contains the number of clusters at each threshold, and the second list contains the corresponding percentages of the total number of sequences.
+
+def CreateMetadataFile(Input, Output, SCHEMAS):
+    Creates a metadata file in JSON format from a FASTA file containing sequence headers with database-specific metadata.
+    Args:
+        Input (str): Path to the input FASTA file containing sequence headers with database-specific metadata.
+        Output (str): Path to the output JSON file where the metadata will be saved.
+        SCHEMAS (dict): A dictionary containing the split points for each database's metadata schema and the corresponding index information.
+    Returns:        dict: A dictionary containing the converged metadata, with keys "Drug Class" and "Name".
 ```
 #### Align
 ```
