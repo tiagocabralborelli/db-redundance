@@ -3,6 +3,7 @@ sys.path.append('./')
 import subprocess
 from Bio import SeqIO
 from source import Align
+import json
 
 def InsertTag(input, output, tag):
     """Insert a database-refering tag at the end of each sequence header in a FASTA file.
@@ -93,3 +94,71 @@ def ClusterCounter(path):
         subprocess.run(["rm", f"{path}.out"], check=True)
         subprocess.run(["rm", f"{path}.out.clstr"], check=True)
     return counts, perc
+
+def CreateMetadataFile(Input, Output, SCHEMAS):
+    """Creates a metadata file in JSON format from a FASTA file containing sequence headers with database-specific metadata.
+    Args:
+        Input (str): Path to the input FASTA file containing sequence headers with database-specific metadata.
+        Output (str): Path to the output JSON file where the metadata will be saved.
+        SCHEMAS (dict): A dictionary containing the split points for each database's metadata schema and the corresponding index information.
+    Returns:        dict: A dictionary containing the converged metadata, with keys "Drug Class" and "Name".
+    """
+    MetadataDict = {}
+    with open(Input, "r") as file:
+        for line in file:
+            if line.startswith(">"):
+                ID = line.strip(">").strip().split("|")[0]
+                ## Check database specificity
+                DatabaseTag = ID.split("_")[0]
+                MetadataDict[ID] = ConvergeSchemas(DatabaseTag, line, SCHEMAS)
+    with open(Output, "w+") as json_file  :
+        json.dump(MetadataDict, json_file, indent=4)
+    return MetadataDict
+
+def ConvergeSchemas(Database, String, SCHEMAS):
+    """Converges the different metadata schemas of the databases into a single, unified schema.
+    Args:        
+        Database (str): The name of the database from which the metadata is being extracted.
+        String (str): The string containing the metadata to be extracted.
+        SCHEMAS (dict): A dictionary containing the split points for each database's metadata schema and the corresponding index information.
+    Returns:        dict: A dictionary containing the converged metadata, with keys "Drug Class" and "Name".
+    """
+
+    match Database:
+        case "CARD":
+            ARO = String.strip(">").strip().split("|")[SCHEMAS["CARD"]["AROSplitPoint"]]
+            DrugClass = SCHEMAS["CARD"]["IndexInfo"][ARO]["Drug Class"]
+            Name = SCHEMAS["CARD"]["IndexInfo"][ARO]["ARO Name"]
+            return {"Drug Class": DrugClass, "Name": Name}
+
+        case "NDARO":
+            RefSeq = String.strip(">").strip().split("|")[-1].split(" ")[SCHEMAS["NDARO"]["AccSplitPoint"]]
+            try:
+                DrugClass = SCHEMAS["NDARO"]["IndexInfo"][RefSeq]["Class"]
+            except:
+                DrugClass = "Not Found"
+            try:
+                Name = SCHEMAS["NDARO"]["IndexInfo"][RefSeq]["Gene family"]
+            except:
+                Name = "Not Found"
+            return {"Drug Class": DrugClass.strip().lower(), "Name": Name}
+
+        case "MEGARES":
+            DrugClass = String.strip(">").strip().split("|")[SCHEMAS["MEGARES"]["DrugClassSplitPoint"]]
+            Name  = String.strip(">").strip().split("|")[SCHEMAS["MEGARES"]["NameSplitPoint"]]
+            return {"Drug Class": DrugClass, "Name": Name.split("_")[0]}
+        
+        case "HMD":
+            DrugClass = String.strip(">").strip().split("|")[SCHEMAS["HMD"]["DrugClassSplitPoint"]]
+            Name  = String.strip(">").strip().split("|")[SCHEMAS["HMD"]["NameSplitPoint"]]
+            return {"Drug Class": DrugClass, "Name": Name}
+        
+        case "NCRD":
+            DrugClass = String.strip(">").strip().split("|")[SCHEMAS["NCRD"]["DrugClassSplitPoint"]]
+            Name = String.strip(">").strip().split("|")[SCHEMAS["NCRD"]["NameSplitPoint"]]
+            return {"Drug Class": DrugClass, "Name": Name}
+        
+        case "RESFINDER":            
+            DrugClass = String.strip(">").strip().split("|")[SCHEMAS["RESFINDER"]["DrugClassSplitPoint"]]
+            Name = String.strip(">").strip().split("|")[SCHEMAS["RESFINDER"]["NameSplitPoint"]]
+            return {"Drug Class": DrugClass.split("_")[0], "Name": Name.split("_")[0]}

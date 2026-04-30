@@ -14,7 +14,7 @@ def RunDiamond(query, db, output, qcov = 80, maxseq = 5, threads=4):
         maxseq (int, optional): Maximum number of target sequences to report. Defaults to 5.
         threads (int, optional): Number of threads to use. Defaults to 4.
     """
-    command = f"diamond blastp -d {db} -q {query} -o {output} -p {threads} --outfmt 6 -b4 --query-cover {qcov} -k {maxseq} --no-self-hits"
+    command = f"diamond blastp -d {db} -q {query} -o {output} -p {threads} --outfmt 6 qseqid sseqid pident length qlen slen qstart qend sstart send evalue bitscore ppos full_qseq full_sseq -b4 --query-cover {qcov} -k {maxseq} --no-self-hits"
     subprocess.run(command, shell=True)
 
 def ProteinAligner(fasta):
