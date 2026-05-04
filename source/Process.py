@@ -95,11 +95,10 @@ def ClusterCounter(path):
         subprocess.run(["rm", f"{path}.out.clstr"], check=True)
     return counts, perc
 
-def CreateMetadataFile(Input, Output, SCHEMAS):
+def CreateMetadataFile(Input, SCHEMAS):
     """Creates a metadata file in JSON format from a FASTA file containing sequence headers with database-specific metadata.
     Args:
         Input (str): Path to the input FASTA file containing sequence headers with database-specific metadata.
-        Output (str): Path to the output JSON file where the metadata will be saved.
         SCHEMAS (dict): A dictionary containing the split points for each database's metadata schema and the corresponding index information.
     Returns:        dict: A dictionary containing the converged metadata, with keys "Drug Class" and "Name".
     """
@@ -111,8 +110,7 @@ def CreateMetadataFile(Input, Output, SCHEMAS):
                 ## Check database specificity
                 DatabaseTag = ID.split("_")[0]
                 MetadataDict[ID] = ConvergeSchemas(DatabaseTag, line, SCHEMAS)
-    with open(Output, "w+") as json_file  :
-        json.dump(MetadataDict, json_file, indent=4)
+
     return MetadataDict
 
 def ConvergeSchemas(Database, String, SCHEMAS):
