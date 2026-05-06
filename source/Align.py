@@ -4,7 +4,7 @@ from Bio import AlignIO
 from io import StringIO
 from Bio import SeqIO
 
-def RunDiamond(query, db, output, qcov = 80, maxseq = 5, threads=4):
+def RunDiamond(query, db, output, qcov = 80, maxseq = 5, threads=12):
     """Runs a DIAMOND search.
     Args:
         query (str): Path to the query FASTA file.
@@ -12,7 +12,7 @@ def RunDiamond(query, db, output, qcov = 80, maxseq = 5, threads=4):
         output (str): Path to the output file.
         qcov (int, optional): Query coverage threshold. Defaults to 80.
         maxseq (int, optional): Maximum number of target sequences to report. Defaults to 5.
-        threads (int, optional): Number of threads to use. Defaults to 4.
+        threads (int, optional): Number of threads to use. Defaults to 12.
     """
     command = f"diamond blastp -d {db} -q {query} -o {output} -p {threads} --outfmt 6 qseqid sseqid pident length qlen slen qstart qend sstart send evalue bitscore ppos full_qseq full_sseq -b4 --query-cover {qcov} -k {maxseq} --no-self-hits"
     subprocess.run(command, shell=True)

@@ -157,6 +157,6 @@ def ConvergeSchemas(Database, String, SCHEMAS):
             return {"Drug Class": DrugClass, "Name": Name}
         
         case "RESFINDER":            
-            DrugClass = String.strip(">").strip().split("|")[SCHEMAS["RESFINDER"]["DrugClassSplitPoint"]]
-            Name = String.strip(">").strip().split("|")[SCHEMAS["RESFINDER"]["NameSplitPoint"]]
-            return {"Drug Class": DrugClass.split("_")[0], "Name": Name.split("_")[0]}
+            Name = String.strip(">").strip().split("|")[SCHEMAS["RESFINDER"]["DrugClassSplitPoint"]].split("_frame=")[0]
+            DrugClass = SCHEMAS["RESFINDER"]["IndexInfo"][Name].get("Class", "Not Found")
+            return {"Drug Class": DrugClass, "Name": Name}
