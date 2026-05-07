@@ -126,8 +126,9 @@ def ConvergeSchemas(Database, String, SCHEMAS):
         case "CARD":
             ARO = String.strip(">").strip().split("|")[SCHEMAS["CARD"]["AROSplitPoint"]]
             DrugClass = SCHEMAS["CARD"]["IndexInfo"][ARO]["Drug Class"]
+            Mechanism = SCHEMAS["CARD"]["IndexInfo"][ARO]["Resistance Mechanism"]
             Name = SCHEMAS["CARD"]["IndexInfo"][ARO]["ARO Name"]
-            return {"Drug Class": DrugClass, "Name": Name}
+            return {"Drug Class": DrugClass, "Name": Name, "Mechanism": Mechanism}
 
         case "NDARO":
             RefSeq = String.strip(">").strip().split("|")[-1].split(" ")[SCHEMAS["NDARO"]["AccSplitPoint"]]
