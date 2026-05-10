@@ -3,9 +3,10 @@ from Bio.Align.Applications import MafftCommandline
 from Bio import AlignIO 
 from io import StringIO
 from Bio import SeqIO
+from pathlib import Path
 
 def RunDiamond(query, db, output, qcov = 80, maxseq = 5, threads=12):
-    """Runs a DIAMOND search.
+    """Runs a DIAMOND blastp search with real-time stderr output.
     Args:
         query (str): Path to the query FASTA file.
         db (str): Path to the DIAMOND database.
@@ -14,8 +15,17 @@ def RunDiamond(query, db, output, qcov = 80, maxseq = 5, threads=12):
         maxseq (int, optional): Maximum number of target sequences to report. Defaults to 5.
         threads (int, optional): Number of threads to use. Defaults to 12.
     """
+    output = Path(output)
     command = f"diamond blastp -d {db} -q {query} -o {output} -p {threads} --outfmt 6 qseqid sseqid pident length qlen slen qstart qend sstart send evalue bitscore ppos full_qseq full_sseq -b4 --query-cover {qcov} -k {maxseq} --no-self-hits"
-    subprocess.run(command, shell=True)
+    print("Running:", "". join(command))
+
+    with subprocess.Popen(command, stderr=subprocess.PIPE, text=True, shell=True) as process:
+        for line in process.stderr:
+            print(line, end="")
+
+    if process.returncode != 0:
+        raise RuntimeError(f"DIAMOND blastp failed with return code {process.returncode}")
+    print (f"DIAMOND blastp output saved to: {output}")
 
 def ProteinAligner(fasta):
     """Aligns a FASTA file of protein sequences using MAFFT.
