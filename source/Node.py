@@ -1,7 +1,7 @@
 from pathlib import Path
 import subprocess
 
-def MakeDiamondDB (fasta_dir, db_dir):
+def MakeDiamondDB (fasta_dir, db_dir,db_name):
     """
     Concatenate all FASTA files from a folder and create a single DIAMOND database.
     
@@ -11,30 +11,14 @@ def MakeDiamondDB (fasta_dir, db_dir):
     """
     fasta_dir = Path(fasta_dir)
     db_dir = Path(db_dir)
-    
     db_dir.mkdir(parents=True, exist_ok=True)
-
-    output_fasta = db_dir / "combined.fasta"
-    output_db = db_dir / "combined"
-
-    fasta_files = sorted(fasta_dir.glob("*.fasta"))
-
-    if len(fasta_files) == 0:
-        raise FileNotFoundError(f"No FASTA files found in {fasta_dir}")
-    
-    with open(output_fasta, "w") as outfile:
-        for fasta_file in fasta_files:
-            print(f"Adding: {fasta_file.name}")
-            with open(fasta_file, "r") as infile:
-                outfile.write(infile.read())
-            outfile.write("\n")  # Ensure separation between files
-
-    print(f"Concatenated FASTA saved to: {output_fasta}")
+    db_dir = Path.joinpath(db_dir,db_name)
 
     command = [
         "diamond", "makedb",
-        "--in", str(output_fasta),
-        "--db", str(output_db)
+        "--in", str(fasta_dir),
+        "--db", str(db_dir),
+        "--quiet"
     ]
 
     print ("Running:", " ".join(command))
@@ -46,7 +30,7 @@ def MakeDiamondDB (fasta_dir, db_dir):
     if process.returncode != 0:
         raise RuntimeError(f"DIAMOND makedb failed with return code {process.returncode}")
     
-    print (f"DIAMOND database saved as: {output_db}.dmnd")
+    print (f"DIAMOND database saved as: {db_name}.dmnd")
 
 
 def PrepareGenomeQueryFasta(genomes_dir, output_filename="all_genomes_query.fasta"):

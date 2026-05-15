@@ -5,7 +5,7 @@ from io import StringIO
 from Bio import SeqIO
 from pathlib import Path
 
-def RunDiamond(query, db, output, qcov = 80, maxseq = 5, threads=12):
+def RunDiamond(query, db, output, minid = 90, qcov = 80, maxseq = 5, threads=12):
     """Runs a DIAMOND blastp search with real-time stderr output.
     Args:
         query (str): Path to the query FASTA file.
@@ -16,7 +16,7 @@ def RunDiamond(query, db, output, qcov = 80, maxseq = 5, threads=12):
         threads (int, optional): Number of threads to use. Defaults to 12.
     """
     output = Path(output)
-    command = f"diamond blastp -d {db} -q {query} -o {output} -p {threads} --outfmt 6 qseqid sseqid pident length qlen slen qstart qend sstart send evalue bitscore ppos full_qseq full_sseq -b4 --query-cover {qcov} -k {maxseq} --no-self-hits"
+    command = f"diamond blastp -d {db} -q {query} -o {output} -p {threads} --id {minid} --outfmt 6 qseqid sseqid stitle pident length qlen slen qstart qend sstart send evalue bitscore ppos full_qseq full_sseq -b 0.5 --query-cover {qcov} -k {maxseq} --no-self-hits"
     print("Running:", "". join(command))
 
     with subprocess.Popen(command, stderr=subprocess.PIPE, text=True, shell=True) as process:
