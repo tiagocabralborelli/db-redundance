@@ -144,7 +144,10 @@ def ConvergeSchemas(Database, String, SCHEMAS):
 
         case "MEGARES":
             DrugClass = String.strip(">").strip().split("|")[SCHEMAS["MEGARES"]["DrugClassSplitPoint"]]
-            Name  = String.strip(">").strip().split("|")[SCHEMAS["MEGARES"]["NameSplitPoint"]]
+            if "RequiresSNPConfirmation" in String:
+                Name  = String.strip(">").strip().split("|")[-2]
+            else:
+                Name  = String.strip(">").strip().split("|")[SCHEMAS["MEGARES"]["NameSplitPoint"]]
             return {"Drug Class": DrugClass, "Name": Name.split("_")[0]}
         
         case "HMD":
