@@ -128,7 +128,7 @@ def ConvergeSchemas(Database, String, SCHEMAS):
             DrugClass = SCHEMAS["CARD"]["IndexInfo"][ARO]["Drug Class"]
             Mechanism = SCHEMAS["CARD"]["IndexInfo"][ARO]["Resistance Mechanism"]
             Name = SCHEMAS["CARD"]["IndexInfo"][ARO]["ARO Name"]
-            return {"Drug Class": DrugClass, "Name": Name, "Mechanism": Mechanism}
+            return {"Drug Class": DrugClass, "Name": Name.lower(), "Mechanism": Mechanism}
 
         case "NDARO":
             RefSeq = String.strip(">").strip().split("|")[-1].split(" ")[SCHEMAS["NDARO"]["AccSplitPoint"]]
@@ -140,7 +140,7 @@ def ConvergeSchemas(Database, String, SCHEMAS):
                 Name = SCHEMAS["NDARO"]["IndexInfo"][RefSeq]["Gene family"]
             except:
                 Name = "Not Found"
-            return {"Drug Class": DrugClass.strip().lower(), "Name": Name}
+            return {"Drug Class": DrugClass.strip().lower(), "Name": Name.lower()}
 
         case "MEGARES":
             DrugClass = String.strip(">").strip().split("|")[SCHEMAS["MEGARES"]["DrugClassSplitPoint"]]
@@ -148,19 +148,19 @@ def ConvergeSchemas(Database, String, SCHEMAS):
                 Name  = String.strip(">").strip().split("|")[-2]
             else:
                 Name  = String.strip(">").strip().split("|")[SCHEMAS["MEGARES"]["NameSplitPoint"]]
-            return {"Drug Class": DrugClass, "Name": Name.split("_")[0]}
+            return {"Drug Class": DrugClass, "Name": Name.lower().split("_")[0]}
         
         case "HMD":
             DrugClass = String.strip(">").strip().split("|")[SCHEMAS["HMD"]["DrugClassSplitPoint"]]
             Name  = String.strip(">").strip().split("|")[SCHEMAS["HMD"]["NameSplitPoint"]]
-            return {"Drug Class": DrugClass, "Name": Name}
+            return {"Drug Class": DrugClass, "Name": Name.lower()}
         
         case "NCRD":
             DrugClass = String.strip(">").strip().split("|")[SCHEMAS["NCRD"]["DrugClassSplitPoint"]]
             Name = String.strip(">").strip().split("|")[SCHEMAS["NCRD"]["NameSplitPoint"]]
-            return {"Drug Class": DrugClass, "Name": Name}
+            return {"Drug Class": DrugClass, "Name": Name.lower()}
         
         case "RESFINDER":            
             Name = String.strip(">").strip().split("|")[SCHEMAS["RESFINDER"]["DrugClassSplitPoint"]].split("_frame=")[0]
             DrugClass = SCHEMAS["RESFINDER"]["IndexInfo"][Name].get("Class", "Not Found")
-            return {"Drug Class": DrugClass, "Name": Name}
+            return {"Drug Class": DrugClass, "Name": Name.lower()}

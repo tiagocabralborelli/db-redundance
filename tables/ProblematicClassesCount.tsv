@@ -1,0 +1,414 @@
+Set	Total
+{diaminopyrimidine, trimethoprim}	40
+{MLS, lincosamide/macrolide, ml}	9
+{fusidane, fusidic acid, fusidic_acid, steroid antibacterial}	2
+{MLS, lincosamide}	14
+{MLS, macrolide ;streptogramin, macrolide, streptogramin b, macrolide/streptogramin, ml, multidrug}	1
+{fosfomycin, phosphonic acid}	148
+{fluoroquinolone, quinolone}	223
+{carbapenem;cephalosporin;monobactam;penicillin beta-lactam;phenicol, gold, multidrug}	1
+{disinfecting agents and antiseptics;nucleoside, drug_and_biocide_resistance, multidrug}	3
+{fusidane, fusidic acid, fusidic_acid}	4
+{drug_and_biocide_resistance, fluoroquinolone ;macrolide ;penicillin beta-lactam, multidrug, na}	2
+{beta-lactam, multidrug}	22
+{amphenicol, chloramphenicol, phenicol}	29
+{drug_and_biocide_resistance, fluoroquinolone ;macrolide ;penicillin beta-lactam, multidrug}	3
+{MLS, lincosamide ;oxazolidinone ;phenicol ;pleuromutilin ;streptogramin a ;streptogramin, multidrug}	4
+{MLS, macrolide}	10
+{rifampin, rifamycin}	27
+{aminocoumarin ;aminoglycoside, drug_and_biocide_resistance, multidrug}	1
+{drug_and_biocide_resistance, fluoroquinolone ;tetracycline, multidrug}	4
+{cephalosporin;disinfecting agents and antiseptics;fluoroquinolone ;moenomycin ;penicillin beta-lactam;peptide ;tetracycline, multidrug}	1
+{MLS, lincosamide ;macrolide, macrolide, ml, multidrug}	2
+{MLS, lincosamide, lincosamide ;pleuromutilin ;streptogramin a ;streptogramin, lincosamide, streptogramin a, pleuromutilin, multidrug}	3
+{na, peptide, thiopeptide, thiostrepton}	1
+{aminoglycoside ;fluoroquinolone ;phosphonic acid, fosfomycin}	1
+{chloramphenicol, phenicol}	74
+{disinfecting agents and antiseptics;fluoroquinolone, multidrug}	3
+{drug_and_biocide_resistance, glycylcycline;tetracycline, multidrug, tetracycline}	2
+{bacitracin, glycopeptide, peptide}	4
+{cephalosporin;disinfecting agents and antiseptics;fluoroquinolone ;glycylcycline;penicillin beta-lactam;phenicol ;rifamycin ;tetracycline, multidrug}	3
+{MLS, ml}	80
+{MLS, lincosamide ;pleuromutilin ;streptogramin, lincosamide, streptogramin a, pleuromutilin, lincosamide/streptogramin, ml, multidrug}	1
+{drug_and_biocide_resistance, fluoroquinolone ;macrolide ;phenicol ;tetracycline, multidrug}	2
+{MLS, ml, streptogramin a ;streptogramin}	1
+{diaminopyrimidine ;fluoroquinolone ;phenicol, drug_and_biocide_resistance, multidrug}	2
+{aminoglycoside ;carbapenem;cephalosporin;disinfecting agents and antiseptics;fluoroquinolone ;macrolide ;penicillin beta-lactam;phenicol ;tetracycline, drug_and_biocide_resistance, efflux, multidrug}	1
+{drug_and_biocide_resistance, efflux, glycylcycline;tetracycline, multidrug}	2
+{aminoglycoside ;cephalosporin;penicillin beta-lactam, drug_and_biocide_resistance, multidrug}	5
+{bacitracin, peptide}	1
+{aminoglycoside ;phenicol ;tetracycline, multidrug}	2
+{drug_and_biocide_resistance, fluoroquinolone, multidrug, quaternary ammonium, quinolone}	1
+{drug_and_biocide_resistance, fluoroquinolone, multidrug}	4
+{aminocoumarin, drug_and_biocide_and_metal_resistance, multidrug}	3
+{folate pathway antagonist, sulfonamide, sulfonamide ;sulfone}	3
+{diaminopyrimidine, na, trimethoprim}	16
+{carbapenem;cephalosporin;monobactam;penicillin beta-lactam;phenicol, drug_and_biocide_and_metal_resistance, efflux, multidrug}	2
+{drug_and_biocide_resistance, macrolide, multidrug}	3
+{MLS, lincosamide/macrolide}	5
+{aminoglycoside ;macrolide, drug_and_biocide_resistance, multidrug}	1
+{aminocoumarin ;carbapenem;cephalosporin;diaminopyrimidine ;fluoroquinolone ;macrolide ;monobactam;penicillin beta-lactam;peptide ;phenicol ;sulfonamide ;tetracycline, drug_and_biocide_resistance, efflux, multidrug}	1
+{MLS, lincosamide ;macrolide, lincosamide/streptogramin, ml, multidrug}	1
+{MLS, macrolide, ml}	60
+{MLS, macrolide, multidrug}	3
+{disinfecting agents and antiseptics;fluoroquinolone ;tetracycline, multidrug}	2
+{multidrug, peptide, polymyxin}	2
+{drug_and_biocide_resistance, multidrug, tetracycline}	5
+{drug_and_biocide_resistance, fluoroquinolone, quaternary ammonium, quinolone}	1
+{MLS, lincosamide ;nucleoside}	1
+{aminocoumarin ;macrolide, multidrug}	1
+{drug_and_biocide_resistance, multidrug, phosphonic acid}	1
+{disinfecting agents and antiseptic, multidrug, na}	1
+{carbapenem;cephalosporin;diaminopyrimidine ;fluoroquinolone ;lincosamide ;macrolide ;penicillin beta-lactam;phenicol ;rifamycin ;tetracycline, drug_and_biocide_resistance, multidrug}	4
+{drug_and_biocide_resistance, fluoroquinolone ;macrolide ;phenicol ;tetracycline, multidrug, quinolone}	1
+{aminoglycoside, nucleoside, streptothricin}	3
+{cationic_antimicrobial_peptide, peptide, polymyxin}	1
+{cephalosporin;disinfecting agents and antiseptics;fluoroquinolone ;glycylcycline;penicillin beta-lactam;phenicol ;rifamycin ;tetracycline, drug_and_biocide_resistance, multidrug}	4
+{lincosamide ;oxazolidinone ;phenicol ;pleuromutilin ;streptogramin a ;streptogramin, lincosamide/oxazolidinone/phenicol/pleuromutilin/streptogramin, multidrug, oxazolidinone, amphenicol, lincosamide, streptogramin a, pleuromutilin}	1
+{cephalosporin;fluoroquinolone ;fusidane ;macrolide, drug_and_biocide_and_metal_resistance, multidrug}	3
+{MLS, lincosamide, ml}	5
+{aminocoumarin ;aminoglycoside ;cephalosporin;diaminopyrimidine ;fluoroquinolone ;macrolide ;penicillin beta-lactam;phenicol ;tetracycline, drug_and_biocide_resistance, multidrug}	2
+{aminocoumarin ;aminoglycoside ;cephalosporin;diaminopyrimidine ;fluoroquinolone ;macrolide ;penicillin beta-lactam;phenicol ;tetracycline, multidrug}	1
+{glycylcycline;tetracycline, tetracycline}	2
+{MLS, ml, streptogramin, streptogramin a, streptogramin a ;streptogramin}	5
+{glycylcycline;tetracycline, multidrug, tetracycline}	2
+{drug_and_biocide_resistance, glycylcycline;tetracycline, multidrug}	2
+{diaminopyrimidine, sulfonamide, trimethoprim}	1
+{amphenicol, drug_and_biocide_resistance, multidrug, phenicol}	2
+{cationic_antimicrobial_peptide, glycopeptide, peptide, polymyxin}	2
+{fosfomycin, lincosamide, multidrug}	1
+{fluoroquinolone ;macrolide ;penicillin beta-lactam;tetracycline, multidrug}	1
+{MLS, lincosamide, multidrug, pleuromutilin ;streptogramin a ;streptogramin, streptogramin a}	1
+{cephalosporin;disinfecting agents and antiseptics;fluoroquinolone ;glycylcycline;penicillin beta-lactam;phenicol ;rifamycin ;tetracycline, drug_and_biocide_resistance, multidrug, tetracycline}	1
+{diaminopyrimidine ;fluoroquinolone ;phenicol, drug_and_biocide_resistance, efflux, multidrug}	1
+{aminoglycoside, diaminopyrimidine, trimethoprim}	1
+{lincosamide ;pleuromutilin ;streptogramin, lincosamide, streptogramin a, lincosamide/streptogramin, multidrug}	1
+{fluoroquinolone, multidrug, quinolone}	9
+{carbapenem;cephalosporin;monobactam;penicillin beta-lactam;phenicol, drug_and_biocide_and_metal_resistance, multidrug}	1
+{disinfecting agents and antiseptics;fluoroquinolone ;lincosamide ;nucleoside ;phenicol, drug_and_biocide_resistance, efflux, multidrug}	1
+{MLS, macrolide ;streptogramin b ;streptogramin, macrolide, streptogramin b, macrolide/streptogramin, ml}	2
+{aminocoumarin, quinolone}	2
+{MLS, macrolide, macrolide ;streptogramin, ml, multidrug}	1
+{cephalosporin;fluoroquinolone ;fusidane ;macrolide, drug_and_biocide_and_metal_resistance, macrolide, multidrug}	1
+{cephalosporin;fluoroquinolone ;macrolide ;penicillin beta-lactam;tetracycline, multidrug}	1
+{aminoglycoside ;fluoroquinolone, drug_and_biocide_resistance, multidrug}	2
+{disinfecting agents and antiseptics;fluoroquinolone ;nucleoside ;phenicol, drug_and_biocide_resistance, multidrug}	1
+{lincosamide ;pleuromutilin ;streptogramin a ;streptogramin b ;streptogramin, lincosamide, streptogramin a, lincosamide/streptogramin, ml, multidrug}	1
+{mycobacterium_tuberculosis-specific_drug, peptide, tuberactinomycin}	1
+{multidrug, nucleoside, streptothricin}	1
+{drug_and_biocide_resistance, fluoroquinolone ;macrolide ;penicillin beta-lactam;tetracycline, multidrug}	1
+{drug_and_biocide_resistance, efflux, macrolide, multidrug}	2
+{aminoglycoside, drug_and_biocide_and_metal_resistance}	2
+{disinfecting agents and antiseptics;fluoroquinolone ;tetracycline, drug_and_biocide_resistance, multidrug}	2
+{cephalosporin;fluoroquinolone ;penicillin beta-lactam, drug_and_biocide_resistance, efflux, multidrug}	1
+{cephalosporin;fluoroquinolone ;penicillin beta-lactam, drug_and_biocide_resistance, multidrug}	1
+{aminoglycoside, aminoglycoside ;macrolide, drug_and_biocide_resistance, multidrug}	1
+{disinfecting agents and antiseptics;fluoroquinolone, drug_and_biocide_resistance, multidrug}	4
+{beta-lactam, na}	4
+{MLS, lincosamide, multidrug}	4
+{MLS, lincosamide ;pleuromutilin ;streptogramin a ;streptogramin, lincosamide, streptogramin a, pleuromutilin, lincosamide/pleuromutilin/streptogramin, multidrug}	1
+{aminoglycoside ;carbapenem;fluoroquinolone ;macrolide ;tetracycline, multidrug}	1
+{cationic_antimicrobial_peptide, peptide, polymyxin, polypeptide}	1
+{carbapenem;cephalosporin;disinfecting agents and antiseptics;fluoroquinolone ;glycylcycline;monobactam;penicillin beta-lactam;phenicol ;rifamycin ;tetracycline, multidrug}	1
+{multidrug, tetracycline}	14
+{MLS, streptogramin, streptogramin a ;streptogramin}	1
+{lincosamide ;pleuromutilin ;streptogramin, lincosamide, streptogramin a, pleuromutilin, lincosamide/streptogramin, multidrug}	1
+{aminoglycoside ;carbapenem;cephalosporin;disinfecting agents and antiseptics;fluoroquinolone ;macrolide ;penicillin beta-lactam;phenicol ;tetracycline, drug_and_biocide_resistance, multidrug}	1
+{aminoglycoside, aminoglycoside ;fluoroquinolone, aminoglycoside/quinolone}	3
+{na, nucleoside, tunicamycin}	1
+{MLS, lincosamide, multidrug, pleuromutilin ;streptogramin a ;streptogramin, streptogramin a, streptogramin b}	1
+{beta-lactam, carbapenem;cephalosporin;disinfecting agents and antiseptics;fluoroquinolone ;glycylcycline;monobactam;penicillin beta-lactam;phenicol ;rifamycin ;tetracycline, multidrug}	1
+{aminocoumarin ;carbapenem;cephalosporin;diaminopyrimidine ;fluoroquinolone ;macrolide ;monobactam;penicillin beta-lactam;peptide ;phenicol ;sulfonamide ;tetracycline, drug_and_biocide_resistance, multidrug}	1
+{disinfecting agents and antiseptics;fluoroquinolone, drug_and_biocide_resistance, multidrug, quinolone}	1
+{MLS, lincosamide ;macrolide, macrolide, multidrug}	1
+{chloramphenicol, multidrug, phenicol}	7
+{aminoglycoside ;fluoroquinolone, multidrug}	1
+{drug_and_biocide_resistance, fluoroquinolone, multidrug, quinolone}	2
+{glycopeptide, lipopeptide, peptide}	5
+{disinfecting agents and antiseptic, na, triclosan}	3
+{disinfecting agents and antiseptic, multidrug, triclosan}	1
+{carbapenem;diaminopyrimidine ;disinfecting agents and antiseptics;macrolide ;phenicol ;tetracycline, drug_and_biocide_resistance, multidrug}	3
+{disinfecting agents and antiseptics;macrolide ;tetracycline, drug_and_biocide_resistance, multidrug}	2
+{disinfecting agents and antiseptics;fluoroquinolone ;macrolide ;phenicol ;tetracycline, multidrug}	2
+{chloramphenicol, drug_and_biocide_resistance, phenicol}	1
+{chloramphenicol, drug_and_biocide_resistance, multidrug, phenicol}	1
+{lincosamide ;pleuromutilin ;streptogramin a ;streptogramin, lincosamide, streptogramin a, pleuromutilin, lincosamide/pleuromutilin/streptogramin, multidrug}	1
+{MLS, lincosamide ;macrolide, ml, multidrug}	1
+{cationic_antimicrobial_peptide, glycopeptide, peptide}	4
+{multidrug, oxazolidinone ;phenicol, oxazolidinone/phenicol}	1
+{multidrug, penicillin beta-lactam;tetracycline, tetracycline}	1
+{lincosamide ;oxazolidinone ;phenicol ;streptogramin, lincosamide/oxazolidinone/phenicol/pleuromutilin/streptogramin, multidrug, oxazolidinone, amphenicol, lincosamide, streptogramin a, pleuromutilin}	1
+{aminoglycoside, beta-lactam}	16
+{amphenicol, quinolone, folate pathway antagonist, diaminopyrimidine ;fluoroquinolone ;glycylcycline;nitrofuran ;tetracycline, drug_and_biocide_resistance, multidrug, nitrofuran/phenicol/quinolone/tetracycline, quinolone}	2
+{cephalosporin;moenomycin ;penicillin beta-lactam;peptide, multidrug}	1
+{drug_and_biocide_resistance, fluoroquinolone ;macrolide ;rifamycin, multidrug}	2
+{multidrug, nitroimidazole}	1
+{disinfecting agents and antiseptics;fluoroquinolone, drug_and_biocide_resistance, efflux, multidrug}	1
+{drug_and_biocide_resistance, fluoroquinolone ;macrolide, multidrug}	1
+{drug_and_biocide_resistance, isoniazid-like ;rifamycin, multidrug}	1
+{antibacterial free fatty acid, drug_and_biocide_resistance, multidrug}	1
+{antibacterial free fatty acid, drug_and_biocide_resistance, efflux, multidrug}	1
+{fluoroquinolone ;nitroimidazole ;tetracycline, multidrug}	1
+{MLS, multidrug}	4
+{MLS, lincosamide ;macrolide, macrolide, ml}	1
+{colistin, lipopeptide, peptide, polymyxin}	50
+{aminoglycoside, kasugamycin}	14
+{MLS, avilamycin, lincosamide ;macrolide ;orthosomycin, ml, multidrug}	1
+{nucleoside, streptothricin}	3
+{multidrug, pleuromutilin}	4
+{MLS, ml, streptogramin, streptogramin a ;streptogramin}	1
+{aminocoumarin ;macrolide ;monobactam;tetracycline, multidrug}	4
+{colistin, glycopeptide, lipopeptide, peptide, polymyxin}	9
+{lincosamide ;pleuromutilin ;streptogramin a ;streptogramin, lincosamide/pleuromutilin/streptogramin, multidrug}	4
+{colistin, na, peptide, polymyxin}	1
+{colistin, peptide, polymyxin}	26
+{colistin, peptide}	9
+{aminocoumarin ;aminoglycoside ;carbapenem;cephalosporin;diaminopyrimidine ;fluoroquinolone ;macrolide ;monobactam;penicillin beta-lactam;peptide ;phenicol ;sulfonamide ;tetracycline, beta-lactam, drug_and_biocide_resistance, multidrug}	1
+{colistin, lipopeptide, na, peptide, polymyxin}	2
+{aminoglycoside, multidrug}	6
+{efflux, macrolide, multidrug}	1
+{bicyclomycin-like, multidrug}	1
+{aminocoumarin ;carbapenem;cephalosporin;diaminopyrimidine ;fluoroquinolone ;macrolide ;monobactam;penicillin beta-lactam;peptide ;phenicol ;sulfonamide ;tetracycline, multidrug}	1
+{multidrug, peptide, peptide ;polyamine}	1
+{cationic_antimicrobial_peptide, colistin, glycopeptide, peptide, polymyxin}	1
+{fosfomycin, na, phosphonic acid}	1
+{aminocoumarin ;aminoglycoside ;carbapenem;cephalosporin;diaminopyrimidine ;disinfecting agents and antiseptics;fluoroquinolone ;macrolide ;monobactam;penicillin beta-lactam;peptide ;phenicol ;sulfonamide ;tetracycline, multidrug}	1
+{bleomycin, glycopeptide}	4
+{aminoglycoside ;disinfecting agents and antiseptics;fluoroquinolone, drug_and_biocide_resistance, multidrug}	1
+{macrolide, multidrug}	6
+{beta-lactam, carbapenem;cephalosporin;monobactam;penicillin beta-lactam, multidrug}	1
+{aminoglycoside ;cephalosporin;fluoroquinolone ;macrolide, drug_and_biocide_resistance, multidrug}	3
+{chloramphenicol, lincosamide ;oxazolidinone ;phenicol ;streptogramin, lincosamide/oxazolidinone/phenicol/pleuromutilin/streptogramin, multidrug}	1
+{disinfecting agents and antiseptics;phenicol ;tetracycline, drug_and_biocide_resistance, multidrug}	1
+{peptide ;rifamycin, rifampin, rifamycin}	1
+{folate pathway antagonist, sulfonamide}	35
+{cationic_antimicrobial_peptide, colistin, glycopeptide, peptide}	1
+{lipopeptide, peptide, polymyxin, polypeptide}	1
+{amphenicol, oxazolidinone, tetracycline, multidrug, oxazolidinone ;phenicol ;tetracycline, oxazolidinone/phenicol}	1
+{macrolide, ml}	13
+{lincosamide/pleuromutilin/streptogramin, multidrug, without defined classification;lincosamide ;nucleoside ;pleuromutilin ;streptogramin a ;streptogramin b ;streptogramin}	1
+{glycopeptide, lipopeptide, peptide, polymyxin}	1
+{beta-lactam, carbapenem;cephalosporin;monobactam;penicillin beta-lactam}	1
+{colistin, lipopeptide, peptide, polymyxin, polypeptide}	3
+{MLS, lincosamide/streptogramin, ml}	1
+{colistin, lipopeptide, peptide, polypeptide}	1
+{fluoroquinolone, fosfomycin, quinolone}	2
+{disinfecting agents and antiseptics;macrolide, drug_and_biocide_resistance, efflux, multidrug}	1
+{aminoglycoside ;cephalosporin;disinfecting agents and antiseptics;macrolide ;peptide ;rifamycin ;tetracycline, multidrug}	2
+{aminoglycoside ;carbapenem;cephalosporin;fluoroquinolone ;macrolide ;penicillin beta-lactam;peptide, drug_and_biocide_resistance, multidrug}	1
+{aminoglycoside ;carbapenem;cephalosporin;fluoroquinolone ;macrolide ;penicillin beta-lactam;peptide, drug_and_biocide_resistance}	1
+{lincosamide ;oxazolidinone ;phenicol ;pleuromutilin ;streptogramin a ;streptogramin b ;streptogramin, lincosamide/oxazolidinone/phenicol/pleuromutilin/streptogramin, multidrug, oxazolidinone, amphenicol, lincosamide, streptogramin a, pleuromutilin}	1
+{disinfecting agents and antiseptic, quaternary ammonium, quinolone}	5
+{disinfecting agents and antiseptic, multidrug, quaternary ammonium, quinolone}	1
+{amphenicol, glycopeptide ;lincosamide ;oxazolidinone ;phenicol ;streptogramin, lincosamide/oxazolidinone/phenicol/pleuromutilin/streptogramin, multidrug}	1
+{cephalosporin;disinfecting agents and antiseptics;fluoroquinolone ;glycopeptide ;glycylcycline;oxazolidinone ;penicillin beta-lactam;phenicol ;rifamycin ;tetracycline, multidrug}	1
+{beta-lactam, glycopeptide, peptide}	1
+{lipopeptide, na, peptide}	1
+{aminoglycoside, fluoride}	1
+{aminocoumarin ;carbapenem;peptide ;rifamycin, multidrug}	1
+{colistin, glycopeptide, lipopeptide, peptide}	1
+{aminoglycoside ;carbapenem;cephalosporin;disinfecting agents and antiseptics;fluoroquinolone ;macrolide ;monobactam;penicillin beta-lactam;phenicol ;tetracycline, colistin, multidrug}	2
+{diaminopyrimidine ;fluoroquinolone ;phenicol, multidrug}	1
+{macrolide ;streptogramin, macrolide/streptogramin, ml, multidrug}	3
+{aminoglycoside, efflux}	2
+{disinfecting agents and antiseptic, qa_compound, quaternary ammonium}	3
+{aminoglycoside ;fluoroquinolone, aminoglycoside/quinolone}	1
+{aminoglycoside, aminoglycoside ;fluoroquinolone, aminoglycoside/quinolone, multidrug}	1
+{MLS, aminoglycoside ;diaminopyrimidine ;macrolide ;oxazolidinone ;phenicol, drug_and_biocide_resistance, macrolide/phenicol, multidrug}	1
+{aminoglycoside ;disinfecting agents and antiseptics;fluoroquinolone ;penicillin beta-lactam;tetracycline, drug_and_biocide_resistance, multidrug}	1
+{disinfecting agents and antiseptic, na}	1
+{disinfecting agents and antiseptic, multidrug, qa_compound, quaternary ammonium}	1
+{aminocoumarin ;aminoglycoside ;carbapenem;cephalosporin;disinfecting agents and antiseptics;fluoroquinolone ;glycylcycline;macrolide ;penicillin beta-lactam;peptide ;phenicol ;rifamycin ;tetracycline, multidrug}	1
+{colistin, glycopeptide, lipopeptide, peptide, polymyxin, polypeptide}	1
+{mupirocin, mupirocin-like}	3
+{drug_and_biocide_resistance, glycopeptide, peptide}	1
+{na, peptide ;rifamycin, rifampin}	1
+{lincosamide ;pleuromutilin ;streptogramin a ;streptogramin, lincosamide/pleuromutilin, multidrug}	1
+{macrolide, macrolide ;phosphonic acid ;streptogramin, ml, multidrug}	1
+{MLS, lincosamide/macrolide, macrolide, ml}	1
+{aminoglycoside, tuberactinomycin}	1
+{lincosamide ;pleuromutilin ;streptogramin a ;streptogramin, lincosamide/streptogramin, multidrug}	1
+{chloramphenicol, nitroimidazole}	4
+{bacitracin, nitroimidazole}	1
+{MLS, nitroimidazole}	2
+{colistin, glycopeptide, peptide, polymyxin}	1
+{colistin, lipopeptide, peptide}	2
+{colistin, glycopeptide, peptide}	3
+{disinfecting agents and antiseptics;nucleoside, nucleoside, sulfonamide}	1
+{amphenicol, lincosamide ;oxazolidinone ;phenicol ;pleuromutilin ;streptogramin, lincosamide/oxazolidinone/phenicol/pleuromutilin/streptogramin, multidrug}	1
+{aminoglycoside ;diaminopyrimidine ;tetracycline, trimethoprim}	1
+{MLS, macrolide, macrolide ;tetracycline, ml}	1
+{lincosamide ;nucleoside ;streptogramin a ;streptogramin, lincosamide/pleuromutilin/streptogramin}	1
+{lincosamide/pleuromutilin/streptogramin, without defined classification;lincosamide ;pleuromutilin}	1
+{fluoroquinolone, not found}	1
+{disinfecting agents and antiseptics;macrolide ;tetracycline, efflux}	1
+{multidrug, quinolone}	2
+{aminoglycoside, na}	6
+{MLS, macrolide/streptogramin, ml}	3
+{MLS, macrolide, streptogramin b, macrolide/streptogramin, ml}	3
+{MLS, macrolide, streptogramin b, macrolide/streptogramin, ml, multidrug}	1
+{MLS, ml, streptogramin, streptogramin a}	7
+{chloramphenicol, drug_and_biocide_resistance, multidrug}	1
+{multidrug, phenicol}	12
+{glycopeptide, tetracycline}	1
+{aminoglycoside, trimethoprim}	1
+{na, trimethoprim}	2
+{drug_and_biocide_resistance, multidrug}	32
+{beta-lactam, drug_and_biocide_and_metal_resistance, multidrug}	2
+{tetracenomycin, tetracycline}	9
+{lincosamide/streptogramin, ml, multidrug}	2
+{polymyxin, polypeptide}	54
+{efflux, multidrug}	6
+{beta-lactam/macrolide/tetracycline, drug_and_biocide_resistance, efflux, multidrug}	1
+{aminocoumarin, beta-lactam}	1
+{MLS, macrolide, lincosamide, ml}	1
+{drug_and_biocide_resistance, multidrug, phenicol/quinolone/trimethoprim, sulfonamide}	1
+{aminoglycoside/beta-lactam/quinolone, drug_and_biocide_resistance, multidrug}	1
+{beta-lactam, multidrug, tetracycline}	1
+{cationic_antimicrobial_peptide, colistin, polymyxin}	1
+{lipopeptide, multidrug, rifamycin}	1
+{aminocoumarin, fosfomycin, quinolone}	1
+{beta-lactam, mycobacterium_tuberculosis-specific_drug, rifampin}	1
+{aminocoumarin, fluoroquinolone, quinolone}	1
+{ethambutol, mycobacterium_tuberculosis-specific_drug}	3
+{lipopeptide, peptide}	3
+{lipopeptide, multidrug}	5
+{beta-lactam, lipopeptide, peptide}	2
+{beta-lactam, fluoroquinolone}	4
+{aminoglycoside, lipopeptide}	2
+{isoniazid, mycobacterium_tuberculosis-specific_drug}	4
+{bacitracin, mycobacterium_tuberculosis-specific_drug}	4
+{polymyxin, rifampin, rifamycin}	1
+{MLS, lipopeptide}	1
+{colistin, drug_and_biocide_resistance, multidrug}	1
+{glycopeptide, mycobacterium_tuberculosis-specific_drug}	1
+{multidrug, rifampin}	1
+{MLS, mycobacterium_tuberculosis-specific_drug}	1
+{beta-lactam, mycobacterium_tuberculosis-specific_drug}	3
+{aminocoumarin, bacitracin, quinolone}	1
+{fluoroquinolone, fosmidomycin}	1
+{elfamycin, tetracycline}	8
+{elfamycin, polyketide, tetracycline}	1
+{beta-lactam, trimethoprim}	1
+{beta-lactam, fluoroquinolone, quinolone}	6
+{MLS, fluoroquinolone, quinolone}	1
+{fluoroquinolone, fosfomycin}	1
+{MLS, aminocoumarin, quinolone}	2
+{beta-lactam, lipopeptide}	2
+{chloramphenicol, colistin, lipopeptide}	1
+{fusidic acid, fusidic_acid, tetracycline}	1
+{fusidic acid, fusidic_acid}	1
+{glycopeptide, lipopeptide}	3
+{lipopeptide, polymyxin}	8
+{fosfomycin, fosmidomycin}	1
+{fosfomycin, multidrug}	4
+{colistin, lipopeptide, multidrug}	1
+{aminoglycoside, fluoroquinolone}	2
+{chloramphenicol, fluoroquinolone, quinolone}	1
+{beta-lactam, tetracycline}	1
+{fluoroquinolone, polymyxin}	1
+{aminoglycoside, fosmidomycin}	1
+{fosfomycin, tetracycline}	1
+{aminoglycoside, fluoroquinolone, quinolone}	2
+{isoniazid, isoniazid/triclosan}	1
+{bacitracin, triclosan}	1
+{multidrug, nitrofuran}	1
+{colistin, lipopeptide, polymyxin}	3
+{mycobacterium_tuberculosis-specific_drug, trimethoprim}	1
+{fosfomycin, rifampin}	1
+{bacitracin, glycopeptide}	968
+{multidrug, qa_compound}	2
+{glycopeptide, polymyxin}	43
+{beta-lactam, drug_and_biocide_resistance, multidrug}	2
+{drug_and_biocide_resistance, multidrug, quinolone}	2
+{drug_and_biocide_resistance, efflux, multidrug}	12
+{multidrug, na}	8
+{na, rifampin, rifamycin}	3
+{lincosamide/oxazolidinone/phenicol/pleuromutilin/streptogramin, multidrug, oxazolidinone, amphenicol, lincosamide, streptogramin a, pleuromutilin}	2
+{multidrug, polymyxin}	5
+{fosmidomycin, multidrug}	7
+{colistin, glycopeptide, polymyxin}	1
+{amphenicol, multidrug, phenicol}	1
+{chloramphenicol, multidrug}	3
+{amphenicol, chloramphenicol, multidrug, phenicol}	1
+{MLS, lincosamide, lincosamide, streptogramin a, pleuromutilin, multidrug}	4
+{fusidane, fusidic_acid}	1
+{drug_and_biocide_resistance, multidrug, na}	2
+{multidrug, not found}	1
+{lincosamide, streptogramin a, lincosamide/streptogramin, ml, multidrug}	1
+{MLS, ml, streptogramin}	1
+{drug_and_biocide_resistance, multidrug, phenicol}	1
+{na, thiostrepton}	2
+{na, thiopeptide, thiostrepton}	1
+{multidrug, peptide}	1
+{beta-lactam, puromycin}	1
+{drug_and_biocide_resistance, multidrug, quaternary ammonium, quinolone}	2
+{na, tunicamycin}	1
+{lipopeptide/rifamycin, rifampin, rifamycin}	1
+{bleomycin, fosfomycin, glycopeptide, polypeptide}	1
+{fosfomycin, multidrug, phosphonic acid}	1
+{aminoglycoside, rifampin, rifamycin}	1
+{na, rifampin}	1
+{aminoglycoside, beta-lactam, streptothricin}	1
+{fluoroquinolone, multidrug}	1
+{beta-lactam, rifampin}	1
+{azabicycloalkane, multidrug}	1
+{beta-lactam, peptide}	2
+{quinolone, rifampin, rifamycin}	1
+{colistin, polymyxin}	8
+{aminoglycoside, beta-lactam, macrolide}	1
+{quinolone, rifampin}	2
+{bleomycin, multidrug}	1
+{quaternary ammonium, quinolone}	7
+{disinfecting agents and antiseptic, quinolone}	6
+{multidrug, quaternary ammonium}	1
+{fusidic acid, fusidic_acid, steroid antibacterial}	1
+{aminoglycoside, bleomycin, glycopeptide}	1
+{bacitracin, bleomycin}	1
+{multidrug, oxazolidinone, amphenicol}	18
+{MLS, aminoglycoside, macrolide}	1
+{bacitracin, macrolide}	2
+{bacitracin, multidrug}	1
+{na, polymyxin}	1
+{MLS, streptogramin}	6
+{bacitracin, multidrug, qa_compound}	1
+{bacitracin, qa_compound}	1
+{multidrug, triclosan}	1
+{lincosamide/oxazolidinone/phenicol/pleuromutilin/streptogramin, ml, multidrug, oxazolidinone, amphenicol, lincosamide, streptogramin a, pleuromutilin}	1
+{aminoglycoside, aminoglycoside/phenicol, phenicol}	1
+{ml, oxazolidinone, amphenicol, lincosamide, streptogramin a, pleuromutilin}	1
+{amphenicol, phenicol}	5
+{macrolide, tetracycline, multidrug}	1
+{lincosamide/macrolide, ml}	2
+{lincosamide, ml}	5
+{glycopeptide, lipopeptide, polymyxin}	1
+{mupirocin, pseudomonic acid}	3
+{MLS, fluoroquinolone}	1
+{glycopeptide, macrolide}	1
+{macrolide/streptothricin, multidrug, nucleoside}	1
+{ml, streptogramin a}	1
+{lincosamide, streptogramin a, pleuromutilin, multidrug}	1
+{MLS, lincosamide, streptogramin a, pleuromutilin, multidrug}	1
+{multidrug, oxazolidinone/phenicol}	1
+{amphenicol, oxazolidinone, tetracycline, multidrug, oxazolidinone/phenicol}	1
+{drug_and_biocide_and_metal_resistance, multidrug}	7
+{MLS, drug_and_biocide_and_metal_resistance, multidrug}	1
+{drug_and_biocide_resistance, efflux}	19
+{bicyclomycin-like, drug_and_biocide_resistance}	1
+{antibacterial free fatty acid, drug_and_biocide_resistance}	1
+{antibacterial free fatty acid, drug_and_biocide_resistance, efflux}	1
+{drug_and_biocide_resistance, multidrug, phenicol/quinolone}	5
+{drug_and_biocide_resistance, phenicol/quinolone}	36
+{drug_and_biocide_resistance, na}	1
+{beta-lactam, drug_and_biocide_resistance}	1
+{colistin, drug_and_biocide_resistance}	1
+{beta-lactam, nitrofuran}	2
+{colistin, glycopeptide}	3
+{na, rifamycin}	3
+{multidrug, phenicol/quinolone}	1
+{disinfecting agents and antiseptic, multidrug}	1
+{colistin, glycopeptide, na, polymyxin}	1
+{MLS, quinolone}	1
+{intimin, not found}	3
+{not found, stx2}	8
+{not found, stx1}	1
